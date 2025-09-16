@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Video Editor Mobile</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex flex-col h-screen">
+
+  <!-- Header -->
+  <header class="flex justify-between items-center p-3 bg-white shadow">
+    <button class="text-lg">◀ Back</button>
+    <div class="flex gap-4">
+      <button class="text-gray-600">↺</button>
+      <button class="text-gray-600">↻</button>
+    </div>
+    <button class="bg-blue-500 text-white px-3 py-1 rounded">Export</button>
+  </header>
+
+  <!-- Preview Area -->
+  <main class="flex-1 flex items-center justify-center bg-black">
+    <div class="w-full max-w-md aspect-video bg-gray-800 flex items-center justify-center text-white">
+      [ Video Preview ]
+    </div>
+  </main>
+
+  <!-- Toolbar -->
+  <nav class="bg-white border-t p-2 flex justify-around text-sm">
+    <button class="flex flex-col items-center">
+      ✂️<span>Cut</span>
+    </button>
+    <button class="flex flex-col items-center">
+      🎵<span>Audio</span>
+    </button>
+    <button class="flex flex-col items-center">
+      🔤<span>Text</span>
+    </button>
+    <button class="flex flex-col items-center">
+      ✨<span>Filter</span>
+    </button>
+    <button class="flex flex-col items-center">
+      🎨<span>FX</span>
+    </button>
+  </nav>
+
+  <!-- Timeline -->
+  <footer class="bg-gray-200 p-2 overflow-x-auto whitespace-nowrap">
+    <div class="flex gap-2">
+      <div class="w-20 h-12 bg-gray-400 rounded"></div>
+      <div class="w-20 h-12 bg-gray-500 rounded"></div>
+      <div class="w-20 h-12 bg-gray-400 rounded"></div>
+      <div class="w-20 h-12 bg-gray-500 rounded"></div>
+    </div>
+    <p class="text-center text-xs text-gray-600 mt-1">[ Timeline Scroll ]</p>
+  </footer>
+
+</body>
+</html>
