@@ -1,47 +1,15 @@
-# 🎬 My Video Editor (WebApp)
+# My Video Editor (Next.js + Tailwind)
 
-WebApp editor video sederhana berbasis **Next.js + TailwindCSS**.  
-Mendukung:
-- Landing Page (create, open, rename, delete project)
-- Video Editor (cut, filter, audio)
-- Undo / Redo
-- Auto Save + Manual Save
-- Import / Export project JSON
-- Toast notifications
+Install:
+1. `npm install`
+2. `npm run dev`
+3. Buka http://localhost:3000
 
-## 🚀 Cara Jalankan
-```bash
-# install dependency
-npm install
+File penting:
+- pages/index.js → landing / home
+- pages/editor.js → editor
 
-# run dev server
-npm run dev
-
-# build production
-npm run build
-npm start
-
-📂 Struktur Project
-
-/pages
- ├─ index.js   → Landing page
- └─ editor.js  → Video editor
-/public        → aset statis
-
-📦 Dependencies
-
-next
-
-react
-
-tailwindcss
-
-
----
-
-👉 Jadi root project-mu minimal butuh:  
-- `package.json`  
-- `tailwind.config.js`  
-- `postcss.config.js`  
-- `pages/` folder  
-- `public/` folder  
+Notes:
+- Project data disimpan di localStorage (key: "projects").
+- Upload video di landing akan membuat project baru + thumbnail (first frame).
+- Editor mendukung auto-save + manual save, undo/redo, import/export JSON, toast notifications.
